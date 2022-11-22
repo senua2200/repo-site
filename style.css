@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container{
+    padding: 15px;
+    max-width: 1146px;
+    /* border: 1px solid #000; */
+    margin: 0 auto;
+}
+
+header{
+    background: red;
+    padding: 10px 0;
+}
+
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* .contacts{ 
+    margin-left: auto;
+}*/
+
+.contacts a{
+    margin-right: 25px;
+    color: #383838;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.contacts a img{
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.btn{
+    background: black;
+    font-size: 16px;
+    color:aliceblue;
+    border: none;
+    width: 200px;
+    padding: 13px 0;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-btn{
+    width: 150px;
+    background: black
+}
+
+.logo{
+    width: 150px;
+    height: 84px;
+}
+
+@media (max-width: 992px){
+    header{
+        height: 170px;
+        padding: 10px;
+    }
+    .logo{
+        margin-bottom: 15px;
+    }
+    .header-info{
+        flex-direction: column;
+    }
+}
+
+
+body { width: 100%;}
+.courser-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-image: url(https://musclefit.info/wp-content/uploads/2021/03/vidy-trenazherov-min-1.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 1146px 400px;
+}
+
+.courser-info h1{
+    font-size: 36px;
+    color: red;
+    margin: 0;
+}
+
+.courser-info p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.buttons{
+    margin: 10px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-ligthgray{
+    background: #383838;
+}
+
+.education-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 70px 0 60px;
+}
+
+.education-info .card{
+    width: 350px;
+    word-break:normal;
+}
+
+b{
+    color: red;
+}
+
+footer{
+    word-break: break-all;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 21.5px;
+}
+
+footer p{
+    margin: 0;
+}
+
+@media (max-width: 767px){
+    header{
+        height: 240px;
+        padding-top: 23;
+    }
+    .contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contacts a{
+        margin-bottom: 2px;
+    }
+    .header-btn{
+        margin-top: 2px;
+    }
+    .courser-info{
+        height: 350px;
+    }
+    .courser-info h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    .buttons{
+        flex-direction: column;
+        width: auto;
+    }
+    .buttons button{
+    margin-bottom: 12px;
+    }
+    .education-info{
+        padding: 20px 0;
+    }
+    .btn{
+        margin-bottom: 12px;
+    }
+}
